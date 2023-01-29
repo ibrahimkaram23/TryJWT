@@ -88,7 +88,6 @@ namespace TryJWT.Services
             authModel.UserName = user.UserName;
             authModel.ExpiresOn = jwtSecurityToken.ValidTo;
             authModel.Roles = rolesList.ToList();
-
             return authModel;
         }
         public async Task<string> AddRoleAsync(AddRoleModel model)
